@@ -1,32 +1,32 @@
-This is filter console app in Go/GoLang.
-It takes json file and returns the ids of records with the empty/null/missing
-and identical values.
-Logic to identify if two records are identical or not, does not consider id value.
-If all fields are identical except id, still records are considered identical.
+This is filter console app in Go/GoLang.  
+It takes json file and returns the ids of records with the empty/null/missing  
+and identical values.  
+Logic to identify if two records are identical or not, does not consider id value.  
+If all fields are identical except id, still records are considered identical.  
 
-Prerequisite
+## Prerequisite
 
-VSCode >= version 1.55.2 or any other IDE/editor
-golang >= 1.16.3
+VSCode >= version 1.55.2 or any other IDE/editor  
+golang >= 1.16.3  
 
-How to run app??
+## How to run app??
 
-Step 1: Navigate to root directory
-Step 2: Install all dependencies
-Step 3: run -> "go build . "
-Step 4: After step2 binary would be created in root directory
-run the binary -> "./filter" (Note you can set the app name while building)
+Step 1: Navigate to root directory  
+Step 2: Install all dependencies  
+Step 3: run -> "go build . "  
+Step 4: After step2 binary would be created in root directory  
+run the binary -> "./filter" (Note you can set the app name while building)  
 
-How to run test??
+## How to run test??  
 
-run -> go test
+run -> go test  
 
-To process another file
-Copy file to root directory
-Set env variable FILTER_FILE_NAME="<filename>"
-run the binary -> "./filter"  (Note you can set the app name while building)
+## To process another file  
+Copy file to root directory  
+Set env variable FILTER_FILE_NAME="<filename>"  
+run the binary -> "./filter"  (Note you can set the app name while building)  
 
-Example:  
+## Example:  
 // json file  
 [  
     {  
@@ -63,6 +63,7 @@ Example:
 
 
 The output of above file would be printed on console  
+## output  
 
 ea0c4  
 ea0c5  
